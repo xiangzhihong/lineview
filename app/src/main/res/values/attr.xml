@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CountView">
+        <attr name="textColor" format="color" />
+        <attr name="bgColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="padding" format="dimension" />
+        <attr name="pointRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="OrderStatisticItemView">
+        <attr name="label" format="string" />
+        <attr name="type" format="enum">
+            <enum name="today_orders" value="1" />
+            <enum name="yesterday_orders" value="2" />
+            <enum name="refund_manager" value="201" />
+            <enum name="expect_deposit" value="1" />
+            <enum name="expect_recv" value="2" />
+            <enum name="expect_start_balance" value="101" />
+            <enum name="expect_balance" value="16" />
+            <enum name="expect_shipping" value="17" />
+            <enum name="shipped" value="3" />
+            <enum name="succed" value="4" />
+            <enum name="canceled" value="18" />
+            <enum name="all" value="200" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="leftEdgeSwipeOffset" format="dimension" />
+        <attr name="rightEdgeSwipeOffset" format="dimension" />
+        <attr name="topEdgeSwipeOffset" format="dimension" />
+        <attr name="bottomEdgeSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+        <attr name="clickToClose" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="LoadingLayout">
+        <attr name="empty_pager_layout" format="reference" />
+        <attr name="failed_pager_layout" format="reference" />
+        <attr name="loading_pager_layout" format="reference" />
+        <attr name="failed_text_id" format="reference" />
+        <attr name="empty_text_id" format="reference" />
+        <attr name="retry_button_id" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LimitLengthText">
+        <attr name="limit_length" format="integer" />
+        <attr name="distinguish_chinese_english" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BubbleMessageView">
+        <attr name="theme_style" format="boolean" />
+    </declare-styleable>
+
+
+    <!-- 底部滑动指示器的样式-->
+    <declare-styleable name="stl_SmartTabLayout">
+        <attr name="stl_indicatorAlwaysInCenter" format="boolean" />
+        <attr name="stl_indicatorWithoutPadding" format="boolean" />
+        <attr name="stl_indicatorInFront" format="boolean" />
+        <attr name="stl_indicatorInterpolation" format="enum">
+            <enum name="smart" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+        <attr name="stl_indicatorGravity" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="top" value="1" />
+            <enum name="center" value="2" />
+        </attr>
+        <attr name="stl_indicatorColor" format="color" />
+        <attr name="stl_indicatorColors" format="reference" />
+        <attr name="stl_indicatorThickness" format="dimension" />
+        <attr name="stl_indicatorCornerRadius" format="dimension" />
+        <attr name="stl_overlineColor" format="color" />
+        <attr name="stl_overlineThickness" format="dimension" />
+        <attr name="stl_underlineColor" format="color" />
+        <attr name="stl_underlineThickness" format="dimension" />
+        <attr name="stl_dividerColor" format="color" />
+        <attr name="stl_dividerColors" format="reference" />
+        <attr name="stl_dividerThickness" format="dimension" />
+        <attr name="stl_defaultTabBackground" format="reference" />
+        <attr name="stl_defaultTabTextAllCaps" format="boolean" />
+        <attr name="stl_defaultTabTextColor" format="color|reference" />
+        <attr name="stl_defaultTabTextSize" format="dimension" />
+        <attr name="stl_defaultTabTextHorizontalPadding" format="dimension" />
+        <attr name="stl_defaultTabTextMinWidth" format="dimension" />
+        <attr name="stl_customTabTextLayoutId" format="reference" />
+        <attr name="stl_customTabTextViewId" format="reference" />
+        <attr name="stl_distributeEvenly" format="boolean" />
+        <attr name="stl_clickable" format="boolean" />
+    </declare-styleable>
+
+    <!-- 图片裁剪-->
+    <attr name="cropImageStyle" format="reference" />
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showCircle" format="boolean" />
+        <attr name="showHandles">
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ImageTextView">
+        <attr name="image_scale" format="float" />
+    </declare-styleable>
+    <declare-styleable name="FramePercent">
+        <attr name="percentX" format="float|reference" />
+        <attr name="percentY" format="float|reference" />
+        <attr name="percentMode" format="enum" />
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity" format="string"></attr>
+    </declare-styleable>
+
+    <!--社区通用ActionBar-->
+    <declare-styleable name="CommonDiaryActionBar">
+        <attr name="title_name" format="reference|string" />
+        <attr name="cancel_name" format="reference|string" />
+        <attr name="confirm_name" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalLinearLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="LineGraph">
+        <attr name="scale_text_size" format="dimension" />
+        <attr name="scale_text_color" format="color" />
+        <attr name="tip_text_size" format="dimension" />
+        <attr name="tip_text_color" format="color" />
+        <attr name="tip_rect_color" format="color" />
+        <attr name="curve_stroke_width" format="dimension" />
+        <attr name="curve_color" format="color" />
+        <attr name="vertical_line_stroke_width" format="dimension" />
+        <attr name="vertical_line_color" format="color" />
+        <attr name="circle_stroke_width" format="dimension" />
+        <attr name="circle_color" format="color" />
+        <attr name="circle_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TabBar">
+        <attr name="tv_color" format="color" />
+    </declare-styleable>
+</resources>

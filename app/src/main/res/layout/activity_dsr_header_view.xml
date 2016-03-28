@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/c12"
+    android:layout_marginTop="10dp"
+    android:padding="15dp">
+
+    <!-- dsrView-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dsr_name"
+            style="@style/mine_dsr_s16_style"
+            android:layout_weight="2.5"
+            android:text="综合评分(DSR)"
+            android:textColor="@color/c9" />
+
+        <TextView
+            android:id="@+id/dsr_score"
+            style="@style/mine_dsr_s16_style"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="0.0"
+            android:textColor="@color/c9" />
+
+        <TextView
+            android:id="@+id/dsr_sort_des"
+            style="@style/mine_dsr_s14_style"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="超过全球0.0%买手"
+            android:textColor="@color/c6" />
+
+
+        <ImageView
+            android:id="@+id/dsr_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/add_product_help" />
+
+    </LinearLayout>
+
+
+    <!-- Delivery-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/delivery_name"
+            style="@style/mine_dsr_s16_style"
+            android:layout_weight="2.5"
+            android:text="物流服务(Delivery)"
+            android:textColor="@color/c6" />
+
+        <TextView
+            android:id="@+id/delivery_score"
+            style="@style/mine_dsr_s16_style"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="0.0"
+            android:textColor="@color/c9" />
+
+        <TextView
+            android:id="@+id/delivery_sort_des"
+            style="@style/mine_dsr_s14_style"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="超过全球0.0%买手"
+            android:textColor="@color/c6" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/add_product_help"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <!-- Service-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/service_name"
+            style="@style/mine_dsr_s16_style"
+            android:layout_weight="2.5"
+            android:text="交易服务(Service)"
+            android:textColor="@color/c6" />
+
+        <TextView
+            android:id="@+id/service_score"
+            style="@style/mine_dsr_s16_style"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="0.0"
+            android:textColor="@color/c9" />
+
+        <TextView
+            android:id="@+id/service_sort_des"
+            style="@style/mine_dsr_s14_style"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="超过全球0.0%买手"
+            android:textColor="@color/c6" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/add_product_help"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <!-- Rating-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rating_name"
+            style="@style/mine_dsr_s16_style"
+            android:layout_weight="2.5"
+            android:text="买家评价(Rating)"
+            android:textColor="@color/c6" />
+
+        <TextView
+            android:id="@+id/rating_score"
+            style="@style/mine_dsr_s16_style"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="0.0"
+            android:textColor="@color/c9" />
+
+        <TextView
+            android:id="@+id/rating_sort_des"
+            style="@style/mine_dsr_s14_style"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="超过全球0.0%买手"
+            android:textColor="@color/c6" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/add_product_help"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>
